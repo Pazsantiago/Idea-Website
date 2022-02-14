@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+
+.container-all{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 5px royalblue solid;
+}
+.header img{
+    margin-left: 15px;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: green;
+    border: orangered solid 2px;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+}
+.header ul li{
+    padding-top: 10px;
+}
+.header ul li a{
+    width: 100px;
+    height: 35px;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.header ul a:hover{
+    border-radius: 50px;
+    color: white;
+    background-color: crimson;
+}
+/* active también */
+.main-container{
+    width: 100%;
+    height: 70vh;
+    background: url("../img/pexels-chris-czermak-2444429.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 50%;
+}
+.main-div{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+}
+.main-div h4{
+    font-size: 45px;
+    margin-bottom: 1em;
+}
+.main-div button{
+    margin-top: 30px;
+    width: 160px;
+    height: 45px;
+    border: 3px red solid;
+    border-radius: 60px;
+}
+.button-hover{
+    cursor: pointer;
+}
+.main-left__button{
+    color: white;
+    background-color: crimson;
+}
+.main-left__button:hover{
+    background-color: white;
+    color: black;
+}
+.main-right__button:hover{
+    background-color: orangered;
+    color: white;
+}
+.section{
+    background-color: white;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.section-container{
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.section-container p{
+    margin-top: 20px;
+}
+.grid-cards{
+    display: grid;
+    grid-template: 50%/ repeat(3, 1fr);
+    gap: 50px;
+}
+
+
+.social-media{
+    position: fixed;
+    right: 2%;
+    bottom: 10px;
+}
+
+.social-media a {
+	background-color:#44c767;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1em;
+	font-weight:bold;
+	padding: 20px 0px;
+	text-decoration:none;
+	text-shadow:0px 2px 0px #2f6627;
+    transition: transform 0.3s ease-in, border-radius 0.1s ease-out, 
+    color 0.5s ease, box-shadow 1s ease-in-out;
+}
+.social-media a:hover {
+    color: orange;
+	background-color: #636cfb;
+    transform: scale(1.2); 
+    border-radius: 50%;
+    box-shadow: 6px -1px 5px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px -1px 5px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px -1px 5px 4px rgba(0,0,0,0.75);
+}
+.social-media a:active {
+	position:relative;
+	top:1px;
+}
+.flex-images{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.flexDiv-images img{
+    width: 60%;
+    height: 350px;
+    border-radius: 50%;
+}
+.footer-separator{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.footer-container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 15%;
+    background-color: wheat;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}      
+@media screen and (max-width: 768px){
+    .header{
+        display: block;
+        text-align: center;
+        background-color: white;
+        border-bottom: 5px royalblue solid;
+    }
+    .header ul{
+        display: block;
+        list-style: none;
+        width: 100%;
+        background-color: burlywood;
+    }
+
+    .header img{
+        margin: auto;
+        padding: 5px;
+    }
+
+    .header ul li a{
+        font-size: 1.2em;
+        height: 35px;
+        margin: 0 auto;
+        color: deepskyblue;
+        text-decoration: none;
+    }
+
+    .main-div{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    .main-div h4{
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .main-div button{
+        margin-top: 0px;
+        width: 160px;
+        height: 45px;
+        border: 3px red solid;
+        border-radius: 60px;
+        margin-bottom: 1em;
+    }
+    .main-left__button{
+        color: white;
+        background-color: crimson;
+    }
+    .main-left__button:hover{
+        background-color: white;
+        color: black;
+    }
+    .main-right__button:hover{
+        background-color: orangered;
+        color: white;
+    }
+
+    .grid-cards{
+        display: grid;
+        grid-template: 35% / repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .flex-images{
+        margin-top: 150px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flexDiv-images{
+        margin-bottom: 3em;
+    }
+
+    .flexDiv-images img{
+        width: 60%;
+        height: 350px;
+        border-radius: 50%;
+    }
+
+    .social-media{
+        position: fixed;
+        right: 1%;
+        bottom: 40px;
+    }
+}
